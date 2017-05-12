@@ -1,0 +1,8 @@
+<h1>ToDos page</h1>
+<ol class="numbered-list">
+    <li *ngFor="let todo of ToDos">
+        <span (click)=onSelectTodo(todo)> <a [routerLink]="['/todo', todo.id]" >{{todo.name}}</a></span>
+    </li>
+</ol>
+Selected Todo Details
+<!--<my-todo [todo]="selectedToDo"></my-todo>-->

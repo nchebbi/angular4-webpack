@@ -1,0 +1,9 @@
+<h1>ToDo Details page</h1>
+ <div *ngIf="todo">
+<span> {{todo.id}}</span>
+<span> {{todo.name}}</span>
+<span> {{todo.done}}</span>
+<input type="checkbox"  [checked]="todo.done">
+ </div>
+
+ <button (click)=goBack()> Go Back</button>

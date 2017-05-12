@@ -1,0 +1,41 @@
+ol.numbered-list {
+	list-style: none;
+	margin-left: 1em;
+	counter-reset: line;
+	>li {
+		position: relative;
+		margin-bottom: 1.5em;
+	}
+	>li:before {
+		position: absolute;
+		left: -2.25em;
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		margin-right: 0.5em;
+		background-color: #d80a7b;
+		border-radius: 50%;
+		color: #fff;
+		text-align: center;
+		line-height: 1.5em;
+		counter-increment: line;
+		content: counter(line);
+	}
+	>li:hover:before {
+		background: #d6d4d4;
+	}
+	a {
+		position: relative;
+		display: block;
+		padding: .4em .4em .4em 2em;
+		margin: .5em 0;
+		text-decoration: none;
+		transition: all .2s ease-in-out;
+		background: #1e81ee;
+		color: white;
+	}
+	a:hover {
+		background: #d6d4d4;
+		text-decoration: none;
+	}
+}

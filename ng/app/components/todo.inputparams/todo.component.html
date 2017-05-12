@@ -1,0 +1,7 @@
+<h1>ToDo</h1>
+ <div *ngIf="todo">
+<span> {{todo.id}}</span>
+<span> {{todo.name}}</span>
+<span> {{todo.done}}</span>
+<input type="checkbox"  [checked]="todo.done">
+ </div>

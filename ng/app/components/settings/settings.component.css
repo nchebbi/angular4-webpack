@@ -1,0 +1,20 @@
+
+nav.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7; 
+    }
+
+nav.topnav ul li {float: left;}
+
+nav.topnav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #666;
+}
+nav.topnav ul li a:hover:not(.active) {background-color: #ddd; }
